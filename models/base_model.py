@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import uuid
 from datetime import datetime
+from models import storage
 """
 The base model for AirBnB project
 """
@@ -18,6 +19,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
         else:
             for key, value in kwargs.items():
                 if key != "__class__":
@@ -38,6 +40,7 @@ class BaseModel:
         updated_at with the current datetime
         """
         self.updated = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """
