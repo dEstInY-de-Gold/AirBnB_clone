@@ -1,12 +1,13 @@
-#!/usr/bin/python3
-"""
-Defines review class
-"""
+#!/usr/bin/env python3
+"""class review"""
+
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Reviews made by users about a place"""
+    """class review inheriting from baseModel
+    """
+
     place_id = ""
     user_id = ""
     text = ""

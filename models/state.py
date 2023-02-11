@@ -1,10 +1,12 @@
-#!/usr/bin/python3
+#!/usr/bin/env Python3
+"""class State Inheriting from BaseModel
 """
-Class that defines a state
-"""
+
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """class to create a state"""
+    """inheriting from BaseModel
+    """
+
     name = ""
