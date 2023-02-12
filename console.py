@@ -17,6 +17,10 @@ from models.review import Review
 class HBNBCommand(cmd.Cmd):
 
     """cmd class
+    It provides a console interface for interaction
+    for adding more data,
+    manipulating existing data and
+    other data management activities
     """
     prompt = "(hbnb) "
     class_dict = {
