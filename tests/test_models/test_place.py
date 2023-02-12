@@ -44,8 +44,10 @@ class TestPlace(unittest.TestCase):
         self.assertIsInstance(self.p.name, str)
         self.assertIsInstance(self.p.description, str)
         self.assertIsInstance(self.p.number_rooms, int)
+        '''
        # self.assertIsInstance(self.p.number_bathrooms, int)
        # self.assertIsInstance(self.p.max_guest, int)
+       '''
         self.assertIsInstance(self.p.price_by_night, int)
         self.assertIsInstance(self.p.latitude, float)
         self.assertIsInstance(self.p.longitude, float)
@@ -53,6 +55,7 @@ class TestPlace(unittest.TestCase):
         self.assertIsInstance(self.p.id, str)
         self.assertIsInstance(self.p.created_at, datetime.datetime)
         self.assertIsInstance(self.p.updated_at, datetime.datetime)
+
 
 if __name__ == '__main__':
     unittest.main()

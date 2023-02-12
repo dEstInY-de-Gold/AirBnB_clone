@@ -36,5 +36,6 @@ class TestCity(unittest.TestCase):
         self.assertIsInstance(self.c.created_at, datetime.datetime)
         self.assertIsInstance(self.c.updated_at, datetime.datetime)
 
+
 if __name__ == '__main__':
     unittest.main()
