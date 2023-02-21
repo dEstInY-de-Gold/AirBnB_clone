@@ -35,5 +35,6 @@ class TestState(unittest.TestCase):
         self.assertIsInstance(self.s.created_at, datetime.datetime)
         self.assertIsInstance(self.s.updated_at, datetime.datetime)
 
+
 if __name__ == '__main__':
     unittest.main()
