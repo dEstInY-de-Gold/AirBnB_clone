@@ -1,0 +1,23 @@
+.places h1 {
+  font-size: 30px;
+}
+
+article {
+  width: 390px;
+  padding: 0px;
+  margin: 20px;
+  border: #FF5A5F 1px solid;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.places h2{
+  font-size: 30px;
+}
+
+.zee {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
